@@ -9,7 +9,7 @@ const Episodes = () => {
   const [episodes, setepisodes] = useState([])
 
   const getEpisodes = () => {
-    fetch(`${API}episodes`)
+    fetch(`${API}/episodes`)
     .then(res => res.json())
     .then(data => {
       console.log(data)
@@ -22,7 +22,7 @@ const Episodes = () => {
   }, [])
 
   return (
-    <div>
+    <div className="main">
       <Menu />
       <div className="episodes">
         {episodes.map((episode, index) => (

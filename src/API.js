@@ -1,1 +1,1 @@
-export const API="https://www.breakingbadapi.com/api/";
+export const API="https://www.breakingbadapi.com/api";

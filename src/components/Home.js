@@ -1,31 +1,18 @@
 import React from 'react'
-// import {useEffect} from 'react'
 import Menu from "./Menu"
-// import {API} from "../API"
-
-
+// import poster2 from "../poster2.jpg"
+// import poster from "../mainPoster.jpg"
+import poster3 from "../poster3.png"
+import Footer from './Footer'
+// import About from './About'
 
 const Home = () => {
-
-  // const HOME_API = API + "characters"  
-
-  // const getData = () => {
-  //   fetch(HOME_API)
-  //   .then(res => res.json())
-  //   .then(data => {console.log(data)})
-  // }
-  
-  // useEffect(() => {
-  //   getData()
-  // }, [])
-
-
   return (
-    <div>
+    <div className="main">
       <Menu />
-      <div className="poster">
-        <img src="https://i.pinimg.com/564x/37/be/b4/37beb45771fa9f1655ebb7ed6aa9a0e9.jpg" alt="breaking bad poster"></img>
-      </div>
+      <div className="poster"></div>
+      {/* <img src={poster3} className="poster" alt="Heisenberg"></img> */}
+      <Footer/>
     </div>
   )
 }

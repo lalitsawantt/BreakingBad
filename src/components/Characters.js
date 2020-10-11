@@ -6,7 +6,7 @@ import Char from './Char'
 
 const Characters = () => {
 
-  const CHAR_API = `${API}characters`  
+  const CHAR_API = `${API}/characters`  
 
   const [characters, setcharacters] = useState([])
 
@@ -21,12 +21,14 @@ const Characters = () => {
   
 
   useEffect(() => {
+
     getData()
+    // eslint-disable-next-line
   }, [])
 
 
   return (
-    <div>
+    <div className="main">
       <Menu />    
       <div className="characters">
         {characters.map((character,index) => (

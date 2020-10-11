@@ -8,7 +8,7 @@ const Deaths = () => {
   const [deaths, setdeaths] = useState([])
 
   const getDeaths = () => {
-    fetch(`${API}deaths`)
+    fetch(`${API}/deaths`)
     .then(res => res.json())
     .then(data => {
       setdeaths(data)
@@ -20,11 +20,11 @@ const Deaths = () => {
   },[])
 
   return (
-    <div>
+    <div className="main">
       <Menu />
       <div className="deaths">
-        {deaths.map((death, index) => (
-          <div className="death" key={index}>
+        {deaths.map((death) => (
+          <div className="death" key={death.death_id}>
             <h3>{death.death}</h3>
             <div className="death-info">
               <h5> Cause : {death.cause}</h5>

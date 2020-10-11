@@ -9,7 +9,7 @@ const Quotes = () => {
   const [quotes, setquotes] = useState([])
 
   const getQuotes = () => {
-    fetch(`${API}quotes`)
+    fetch(`${API}/quotes`)
     .then(res => res.json())
     .then(data => {
       setquotes(data)
@@ -21,7 +21,7 @@ const Quotes = () => {
   ),[])
 
   return (
-    <div>
+    <div className="main">
       <Menu />
       <div className="quotes">
         {quotes.map((quote, id) => (
