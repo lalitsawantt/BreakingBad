@@ -11,6 +11,19 @@ const About = () => {
         White chooses to enter a dangerous world of drugs and crime and ascends to power in the world. 
         The series explores how a fatal diagnosis such as White's releases a typical man from the daily concerns and constraints 
         of normal society and follows his transformation from mild family man to a kingpin of the drug trade.</p>
+        <h4> Creator - Vince Gilligan</h4>
+        <h4>Starring - 	
+Bryan Cranston,
+Anna Gunn,
+Aaron Paul,
+Dean Norris,
+Betsy Brandt,
+RJ Mitte,
+Bob Odenkirk,
+Giancarlo Esposito,
+Jonathan Banks,
+Laura Fraser,
+Jesse Plemons</h4>
     </div>
   )
 }

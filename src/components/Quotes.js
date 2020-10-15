@@ -26,9 +26,8 @@ const Quotes = () => {
       <div className="quotes">
         {quotes.map((quote, id) => (
           <div className="quote" key={id}>
-            <h5>"{quote.quote}"</h5>
-            <h5 className="hidden">{quote.author}</h5>
-            <h5 className="hidden">{quote.series}</h5>
+            <h3>"{quote.quote}"</h3>
+            <h5 className="hidden">-{quote.author}</h5>
             <br/>
             <br/>
           </div>

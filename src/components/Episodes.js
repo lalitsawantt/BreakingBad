@@ -25,26 +25,27 @@ const Episodes = () => {
     <div className="main">
       <Menu />
       <div className="episodes">
-        {episodes.map((episode, index) => (
+        {episodes.map((episode, index) => (  
           <div className="episode">
-            <div key={index}>
-              <div className="title">
-                <h4>Title : {episode.title}</h4>
-              </div>
-              <div className="epi-info">
-              <h4>S{episode.season}Ep{episode.episode}</h4>
-              <h4>Episode number : {episode.episode}</h4>
-              <h4>Air date : {episode.air_date}</h4>
-              <h4>Characters Involved : {episode.characters.map((character,index) => (
-                <p key={index}>{character}</p>
-              ))}</h4>
-              <br/>
-              <br/>
-              </div>
+          <div key={index}>
+            <div className="title">
+              <h4>Title : {episode.title}</h4>
             </div>
+            <div className="epi-info">
+            <h4>S{episode.season}Ep{episode.episode}</h4>
+            <h4>Episode number : {episode.episode}</h4>
+            <h4>Air date : {episode.air_date}</h4>
+            <h4>Characters Involved : {episode.characters.map((character,index) => (
+              <p key={index}>{character}</p>
+            ))}</h4>
+            <br/>
+            <br/>
+            </div>
+          </div>
           </div>
         ))}
       </div>
+
     </div>
   )
 }

@@ -10,12 +10,12 @@
 }
 .poster {
   background-image: url("./poster3.png");
+  background-position: 50% -50%;
   padding-top: 100px;
   width: 100%;
   height: 90vh;
   position: relative;
-  /* overflow: auto; */
- background-size: contain;
+ background-size: cover;
   justify-content: center;
   background-attachment: fixed;
 }
@@ -24,20 +24,33 @@
   background-color: black;
   color: white;
   font-family: 'Roboto', sans-serif;
+  padding:0 10px 0 10px;
+
+}
+
+.text:hover{
+  color: chartreuse;
+  transition: 0.3s ease-in-out;
 }
 
 
 .About{
   background-color: black;
-  color: chartreuse;
+  color: white;
+  padding:10px;
+}
 
+.About:hover{
+  color: chartreuse;
+  transition: 0.3s ease-in-out;
+  text-decoration: underline;
 }
 
 
 .footer{
-  background-attachment: scroll;
+  /* background-attachment: scroll; */
   width:100%;
-  height: 300px;
+  height: auto;
   float: left;
   background-color: rgb(0, 0, 0);
   color: white;
@@ -45,7 +58,9 @@
   align-items: center;
   vertical-align: middle;
   border-left: 10 px solid chartreuse;
+  padding-bottom: 30px;
 }
+
 
 .Menu {
   z-index: 1;
@@ -59,14 +74,14 @@
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  border-bottom: 3px solid chartreuse;
+  border-bottom: 5px solid chartreuse;
   /* background-attachment: fixed; */
 }
 
 body{
-  background-color: #e7e7e7;
+  background-color:rgb(19, 19, 19);
   margin: 0;
-  padding: 0;
+  padding: 0; 
 }
 
 header {
@@ -114,7 +129,7 @@ ul {
 
 .char img{
   width:200px;
-  height: 300px;
+  height: 270px;
 }
 
 
@@ -133,7 +148,7 @@ bottom:0;
 right:0;
 left: 0;
 background-color: black;
-color: rgb(255, 255, 255);
+color: chartreuse;
 transform: translateY(100%);
 transition: 0.3s ease-in-out;
 height: 100%;
@@ -165,11 +180,15 @@ overflow: auto;
   padding:10px;
   align-items: center;
   border-radius: 5px;
-  /* justify-content: center; */
+  background-image: url("./epibg2.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.9;
 }
 
 .episode:hover{
-  color: rgb(178, 255, 101);
+  color: chartreuse;
   transition: 0.1s ease-in-out;
 }
 
@@ -206,12 +225,17 @@ overflow: auto;
 }
 
  .quote{
+  background-image: url("./1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.9;
+  border-left: 9px solid chartreuse;
   width:400px;
   height: auto;
   padding: 10px;
   background-color: black;
-  color: white;
-  border: 2px solid chartreuse;
+  color: rgb(0, 0, 0);
+  /* border: 2px solid chartreuse; */
   margin: 10px;
   align-items: center;
   font-family: 'Roboto', sans-serif;
@@ -245,28 +269,49 @@ visibility: hidden;
   height: auto;
   padding: 10px;
   background-color: black;
-  color: white;
-  border: 2px solid chartreuse;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
   margin: 10px;
   align-items: center;
   font-family: 'Roboto', sans-serif;
+  background-image: url("./death-02.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.9;
+
 }
 
 
 .death:hover .death-info{
   visibility: visible;
+  opacity: 1;
   color: chartreuse;
   /* transform: translateX(10%); */
    transition:0.2s ease-in-out
 }  
 
 .death:hover{ 
-  color: chartreuse;
-  transition: 0.2s ease-in-out;
+
+  color:chartreuse;
+  transition: 0.3s ease-in-out;
 }
 
 .death-info{
 visibility: hidden;
+
 }
 
-/* ////////////////////////////// */
+.github a{
+  color: white;
+  text-decoration: none;
+}
+
+.copyright{
+  font-size: 0.7em;
+  padding: 20px;
+  color: white;
+}
+
+.copyright a{ 
+  color: white;
+}
