@@ -33,11 +33,13 @@ const Episodes = () => {
             </div>
             <div className="epi-info">
             <h4>S{episode.season}Ep{episode.episode}</h4>
+            <h4>Series : {episode.series}</h4>
             <h4>Episode number : {episode.episode}</h4>
             <h4>Air date : {episode.air_date}</h4>
             <h4>Characters Involved : {episode.characters.map((character,index) => (
               <p key={index}>{character}</p>
             ))}</h4>
+
             <br/>
             <br/>
             </div>

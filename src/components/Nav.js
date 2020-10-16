@@ -7,6 +7,7 @@ const Nav = () => {
     e.target.style.color='chartreuse'
   }
 
+
   const restoreColour = (e) => {
     e.target.style.color='white'
 
@@ -24,7 +25,8 @@ const Nav = () => {
           <Link to="/" 
           style={{textDecoration:"none", color:"white"}} 
           onMouseEnter={changeColour} 
-          onMouseLeave={restoreColour}>
+          onMouseLeave={restoreColour}
+          >
             <h4>Home</h4></Link>
         </li>
         <li className="trial">
